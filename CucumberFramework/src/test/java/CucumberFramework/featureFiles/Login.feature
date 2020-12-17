@@ -6,8 +6,9 @@ Scenario Outline: Login to account with credentials
 	And user enters the "<username>" username
 	And user enter the "<password>" password
 	When user clicks on the login button
-	Then the user should land on home page with title  "<title>"
-		
+	And user clicks on the Friends button
+Then the user should land on home page with title  "<title>"
+	
 	
 	Examples:
 	| 	url 							| 		username 		|		 password		 |title			|

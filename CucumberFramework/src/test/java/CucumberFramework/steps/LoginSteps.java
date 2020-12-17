@@ -1,11 +1,10 @@
 package CucumberFramework.steps;
 
-import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,10 +20,10 @@ import cucumber.api.java.en.When;
 public class LoginSteps {
 	WebDriver driver;
 	
-	@Before()
+	//@Before()
 	public void setup() throws IOException {
 		
-		System.setProperty("webdriver.chrome.driver", Paths.get(System.getProperty("user.dir")).toRealPath() +  "/src/test/java/CucumberFramework/resources/chromedriver");
+		System.setProperty("webdriver.chrome.driver", Paths.get(System.getProperty("user.dir")).toRealPath() +  "/src/test/java/CucumberFramework/resources/chromedriver.exe");
 		this.driver = new ChromeDriver();
 		this.driver.manage().window().maximize();
 		this.driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
@@ -92,6 +91,11 @@ public class LoginSteps {
 	            System.out.println("Test Failed");
 	        }
 	        System.out.println(actualTitle);  
+	        
+	        
+	        
+	        
+	        
 	}
 
 }
