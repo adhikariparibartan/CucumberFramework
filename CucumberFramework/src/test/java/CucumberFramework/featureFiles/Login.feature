@@ -1,15 +1,16 @@
-Feature: Login into account
-
-Scenario Outline: Login to account with credentials
-	Given user navigates to "<url>" 
-	When user lands on facebook login page
-	And user enters the "<username>" username
-	And user enter the "<password>" password
-	When user clicks on the login button
-	Then the user should land on home page with title  "<title>"
-		
-	
-	Examples:
-	| 	url 							| 		username 		|		 password		 |title			|
-	|http://www.facebook.com/			|	anticbaby@gmail.com	|		qaclass123		 | Facebook - Log In or Sign Up|
-	
+#Feature: Agamacontact
+#
+#Scenario Outline: Login to account of agama
+#	Given user navigates to "http://agamaamerica.com"
+#	When user lands on agama contactus page
+#	And user enters the "Dibash" 
+#	And user enter the "sapkotadibash@gmail.com" 
+#	And user enter the "Testing" at your testing
+#	When user clicks on the send message
+#	Then the user should land on page with title  "Thank you for the Message"
+#	
+#	Examples:
+#	| 	url 							| 		username 		|		 password		 |title			|
+#	|http://www.facebook.com/			|	anticbaby@gmail.com	|		qaclass123		 | Facebook - Log In or Sign Up|
+#		
+#	
